@@ -128,6 +128,46 @@ If the requested audience is external or customer-facing, confirm before proceed
 
 ---
 
+# Audience Technical Depth
+
+Determine audience level first — it controls how much technical detail survives the rewrite.
+
+| Audience | Allowed Technical Depth |
+|----------|-------------------------|
+| Engineer | Exact method/function detail acceptable |
+| Tech Lead | Some implementation mechanics, architectural constraints |
+| PM/Release/Leadership | Operational abstraction preferred — focus on impact, risk, rollout confidence |
+| Executive Summary | Impact-first only — no implementation detail |
+
+## Tech Lead / Architecture Stakeholders
+May include:
+- important implementation mechanics
+- concurrency behavior
+- migration sequencing
+- architectural constraints
+
+## PM / Release / Leadership
+Prefer:
+- operational behavior
+- release implications
+- rollout confidence
+- dependency coordination
+- risk and mitigation
+
+Avoid:
+- exact method names
+- inheritance details
+- internal lifecycle narration
+
+## Executive Summary
+Lead almost entirely with:
+- impact
+- delivery confidence
+- release status
+- operational risk
+
+---
+
 # Preserve Operational Specificity
 
 Do not abstract concrete engineering issues into vague business language.
@@ -731,46 +771,6 @@ Good:
 
 ---
 
-# Audience Technical Depth
-
-Adjust technical depth based on audience level. The skill currently treats all engineering-adjacent audiences similarly — this causes implementation detail to survive.
-
-| Audience | Allowed Technical Depth |
-|----------|-------------------------|
-| Engineer | Exact method/function detail acceptable |
-| Tech Lead | Some implementation mechanics, architectural constraints |
-| PM/Release/Leadership | Operational abstraction preferred — focus on impact, risk, rollout confidence |
-| Executive Summary | Impact-first only — no implementation detail |
-
-## Tech Lead / Architecture Stakeholders
-May include:
-- important implementation mechanics
-- concurrency behavior
-- migration sequencing
-- architectural constraints
-
-## PM / Release / Leadership
-Prefer:
-- operational behavior
-- release implications
-- rollout confidence
-- dependency coordination
-- risk and mitigation
-
-Avoid:
-- exact method names
-- inheritance details
-- internal lifecycle narration
-
-## Executive Summary
-Lead almost entirely with:
-- impact
-- delivery confidence
-- release status
-- operational risk
-
----
-
 # Behavioral Framing Rule
 
 Prefer describing:
@@ -856,6 +856,19 @@ Good:
 
 Bad:
 > “Same onCacheLoaded hook, different bug class.”
+
+---
+
+# Thai Language Support
+
+When the user requests Thai output (e.g., "translate for leadership in Thai", "Thai standup", "ภาษาไทย"):
+
+- Maintain all operational abstraction principles — the language changes, not the discipline
+- Use natural Thai phrasing for technical concepts; do not transliterate English terms that have established Thai equivalents
+- Keep stakeholder-facing tone: professional but not corporate
+- Preserve operational identifiers (ticket IDs, PR numbers, service names, environment labels) in their original form — do not translate or transliterate them
+- Severity calibration rules apply equally: avoid dramatic Thai labels (หายนะ, วิกฤตร้ายแรง) unless severity is genuinely confirmed; prefer descriptive terms (กรณีเฉพาะจุด, มีปัญหาเป็นช่วงๆ, ยังตรวจสอบอยู่)
+- Channel format constraints (word limits, structure) remain the same
 
 ---
 

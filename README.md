@@ -64,7 +64,7 @@ Use this skill whenever the user:
 ## Install
 
 ```bash
-npx skill install ./translatio-operrativa
+npx skill install ./translatio-operativa
 ```
 
 Or manually copy `SKILL.md` to your skills directory.

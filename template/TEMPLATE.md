@@ -185,6 +185,6 @@ OUTPUT: Channel-optimized format
 
 ## Skill Source
 
-Location: `~/Desktop/Workhub/skill-tree/translatio-operrativa/SKILL.md`
+Location: `~/Desktop/Workhub/skill-tree/translatio-operativa/SKILL.md`
 
 Last Updated: 2026-05-28

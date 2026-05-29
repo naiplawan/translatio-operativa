@@ -1,4 +1,4 @@
-# Translatio Operrativa
+# Translatio Operativa
 
 Transform engineering updates, debugging notes, incident summaries, and technical threads into operationally clear communication for engineering leadership, PMs, TPMs, and stakeholders — without losing technical truth.
 
